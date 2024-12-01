@@ -1904,7 +1904,12 @@ h1, h2, h3, h4, h5, h6 {
 .header-top ul li a {
   color: #fff;
 }
-
+#logo {
+  position: absolute; /* Pozíció rögzítése */
+  top: 0; /* Felső széléhez igazítás */
+  left: 0; /* Bal széléhez igazítás */
+  margin: 0; /* További távolság eltávolítása */
+}
 @media (max-width: 960px) {
   .header-top {
     display: none;
@@ -1935,6 +1940,8 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  max-height: 400px; /* Állítsd be a logó méretét szükség szerint */
+  max-width: 150px; /* Szélesség szabályozása */
 }
 
 @media (max-width: 768px) {
